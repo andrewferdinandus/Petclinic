@@ -82,6 +82,18 @@
 
     </properties>
 
+    <distributionManagement>
+             <repository>
+                 <id>maven-releases</id>
+                 <url>http://13.239.225.106:8081/repository/maven-releases/</url>
+             </repository> 
+             <!-- <snapshotRepository>
+                 <id>maven-snapshots</id>
+                 <url>http://13.239.225.106:8081/repository/maven-snapshots/</url>
+             </snapshotRepository> -->
+</distributionManagement>
+
+         
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -547,10 +559,15 @@
 
     <repositories>
         <repository>
+            <id>maven-releases</id>
+            <name>maven-releases</name>
+            <url>http://13.239.225.106:8081/repository/maven-releases/</url>
+        </repository>
+         <repository>
             <id>repository.spring.milestone</id>
             <name>Spring Milestone Repository</name>
             <url>https://repo.spring.io/milestone</url>
-        </repository>
+        </repository> 
     </repositories>
 
 </project>
